@@ -1,0 +1,62 @@
+.header {
+  padding-bottom: 50px;
+}
+
+.header__text {
+  margin-bottom: 30px;
+}
+
+.header__text:last-child {
+  margin-bottom: 50px;
+}
+
+.header__nav {
+  margin-left: -30px;
+  margin-right: -30px;
+  padding-top: 25px;
+  padding-left: 45px;
+  background-color: #F1F1F1;
+}
+
+.nav__title {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 53px;
+  margin-bottom: 20px;
+}
+
+.nav__list {
+  padding-bottom: 20px;
+  list-style-type: none;
+  counter-reset: item;
+}
+
+.nav__item {
+  display: inline-block;
+  position: relative;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #02535F;
+  margin-bottom: 10px;
+
+}
+
+.nav__item::after {
+  display: block;
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 97%;
+  background-color: #000;
+  bottom: 0;
+  left: 20px;
+}
+
+.nav__item::before {
+  content: counter(item) '.';
+  /* Добавляем точку */
+  counter-increment: item;
+  /* Задаём имя счетчика */
+  margin-right: 4px;
+}
