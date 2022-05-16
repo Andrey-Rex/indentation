@@ -49,6 +49,8 @@
 }
 
 .row__image {
+  max-width: 560px;
+  height: auto;
   display: inline-block;
   margin-right: 30px;
   font-size: 0;
