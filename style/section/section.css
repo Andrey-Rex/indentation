@@ -24,8 +24,7 @@
 
 .section__image {
   display: block;
-  margin: 0 auto;
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
 }
 
 .section__image_bottom_no {
@@ -56,8 +55,9 @@
   font-size: 0;
 }
 
-.row__image:nth-child(2n+2) {
+.row__image:last-child {
   margin-right: 0;
+
 }
 
 .row__inner {
@@ -66,7 +66,7 @@
   vertical-align: top;
 }
 
-.row__inner:nth-child(2n+1) {
+.row__inner:first-child {
   max-width: 480px;
   margin-right: 35px;
 }
