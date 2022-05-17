@@ -26,8 +26,12 @@
   margin-bottom: 20px;
 }
 
+.nav__inner {
+  padding-bottom: 25px;
+}
+
 .nav__list {
-  padding-bottom: 20px;
+
   list-style-type: none;
   counter-reset: item;
 }
@@ -60,4 +64,8 @@
   counter-increment: item;
   /* Задаём имя счетчика */
   margin-right: 4px;
+}
+
+.nav__item:last-child {
+  margin-bottom: 0;
 }
